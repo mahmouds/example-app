@@ -1,0 +1,4 @@
+echo "Please install the post-merge script by running ln -s FULL_DIRECTORY_PATH/app/Scripts/post-merge FULL_DIRECTORY_PATH/.git/hooks/post-merge"
+composer install --optimize-autoloader --no-dev
+cp .env.example .env
+php artisan key:generate
